@@ -5,15 +5,13 @@
   "description": "XAI Finance Web3应用 - 加密货币行情、K线图和Web3应用发现平台",
   "author": "Your Name",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/你的用户名/xai6.git"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next node_modules",
+    "reinstall": "npm run clean && npm install"
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0",
@@ -66,7 +64,10 @@
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.6",
-    "zod": "^3.24.1"
+    "zod": "^3.24.1",
+    "@types/lightweight-charts": "^4.1.0",
+    "axios": "^1.6.2",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
@@ -77,6 +78,12 @@
     "eslint-config-next": "14.0.4",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.9"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }

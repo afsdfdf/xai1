@@ -12,6 +12,113 @@ XAI2是一个基于Next.js开发的加密货币交易应用，提供代币搜索
 - **错误处理**：自定义ErrorBoundary
 - **性能监控**：自定义性能跟踪工具
 
+## 环境要求
+
+- Node.js 18.0.0 或更高版本
+- npm 9.0.0 或更高版本
+- Git
+
+## 安装步骤
+
+1. 克隆项目：
+```bash
+git clone https://github.com/afsdfdf/xai1.git
+cd xai1
+```
+
+2. 安装依赖：
+```bash
+# 使用 npm
+npm install
+
+# 或使用 pnpm
+pnpm install
+```
+
+3. 环境配置：
+- 复制 `.env.example` 文件为 `.env`
+- 配置必要的环境变量（如果需要）
+
+4. 开发环境运行：
+```bash
+npm run dev
+# 或
+pnpm dev
+```
+
+5. 构建生产版本：
+```bash
+npm run build
+# 或
+pnpm build
+```
+
+6. 启动生产版本：
+```bash
+npm start
+# 或
+pnpm start
+```
+
+## 常见问题解决
+
+### 1. 依赖安装失败
+如果遇到依赖安装问题，请尝试：
+```bash
+# 清除 npm 缓存
+npm cache clean --force
+
+# 删除 node_modules 和 .next
+npm run clean
+
+# 重新安装依赖
+npm install
+```
+
+### 2. 构建错误
+如果遇到构建错误：
+```bash
+# 清理 Next.js 缓存
+rm -rf .next
+
+# 重新构建
+npm run build
+```
+
+### 3. 运行错误
+如果遇到运行错误：
+- 确保所有环境变量都已正确配置
+- 检查 Node.js 版本是否符合要求
+- 确保端口 3000 未被占用
+
+### 4. 类型错误
+如果遇到 TypeScript 类型错误：
+```bash
+# 清理 TypeScript 缓存
+rm -rf .next
+rm -rf node_modules/.cache
+
+# 重新安装依赖
+npm install
+
+# 重新构建
+npm run build
+```
+
+### 5. 样式问题
+如果遇到样式问题：
+```bash
+# 清理缓存
+rm -rf .next
+rm -rf node_modules/.cache
+
+# 重新安装依赖
+npm install
+
+# 重新启动开发服务器
+npm run dev
+```
+
 ## 项目结构
 
 ```
@@ -29,35 +136,6 @@ app/
   ├── types/               # 类型定义
   ├── utils/               # 工具函数
   └── constants/           # 常量定义
-```
-
-## 安装和运行
-
-### 环境要求
-- Node.js 18.0.0 或更高版本
-- npm 9.0.0 或更高版本
-
-### 安装步骤
-
-1. 克隆项目到本地
-2. 安装依赖：
-```bash
-npm install
-```
-
-3. 开发环境运行：
-```bash
-npm run dev
-```
-
-4. 构建生产版本：
-```bash
-npm run build
-```
-
-5. 启动生产版本：
-```bash
-npm start
 ```
 
 ## 核心功能模块
