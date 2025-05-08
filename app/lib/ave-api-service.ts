@@ -2,8 +2,8 @@
 import { apiRequest, buildUrl } from './api-utils';
 import * as Types from './types/ave-api';
 
-// API密钥配置 - 应从环境变量获取
-const AVE_API_KEY = process.env.AVE_API_KEY || "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
+// 硬编码API密钥，不再依赖环境变量
+const AVE_API_KEY = "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
 
 // 格式化token_id (地址-链)
 export const formatTokenId = (address: string, chain: string): string => `${address}-${chain}`;

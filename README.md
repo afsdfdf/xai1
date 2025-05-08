@@ -35,25 +35,21 @@ npm install
 pnpm install
 ```
 
-3. 环境配置：
-- 复制 `.env.example` 文件为 `.env`
-- 配置必要的环境变量（如果需要）
-
-4. 开发环境运行：
+3. 开发环境运行：
 ```bash
 npm run dev
 # 或
 pnpm dev
 ```
 
-5. 构建生产版本：
+4. 构建生产版本：
 ```bash
 npm run build
 # 或
 pnpm build
 ```
 
-6. 启动生产版本：
+5. 启动生产版本：
 ```bash
 npm start
 # 或
@@ -87,7 +83,7 @@ npm run build
 
 ### 3. 运行错误
 如果遇到运行错误：
-- 确保所有环境变量都已正确配置
+- 验证你的网络连接能够访问 api.ave.ai
 - 检查 Node.js 版本是否符合要求
 - 确保端口 3000 未被占用
 
@@ -177,6 +173,7 @@ K线图表系统基于LightweightCharts库，支持多种时间周期和指标�
 - 实现了API请求性能跟踪
 - 错误处理和重试机制
 - 本地缓存减少重复请求
+- API密钥已硬编码到应用中，无需额外配置
 
 ## 主要组件说明
 
@@ -259,13 +256,13 @@ GET /api/token-kline?blockchain={chain}&address={tokenAddress}&timeframe={timefr
 
 ## 安全考虑
 
-1. **API密钥保护**：确保API密钥不暴露在前端代码中
+1. **API密钥处理**：API密钥已硬编码到应用中，简化部署流程
 2. **数据验证**：在API端点实现严格的输入验证
 3. **错误消息**：确保生产环境中不暴露敏感错误信息
 
 ## 常见问题排查
 
-1. **API请求失败**：检查API密钥和日志中的错误消息
+1. **API请求失败**：检查网络连接和日志中的错误消息
 2. **图表加载问题**：使用ChartDiagnostic组件调试
 3. **组件错误**：查看ErrorBoundary捕获的错误信息
 
