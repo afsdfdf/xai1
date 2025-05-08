@@ -33,20 +33,6 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo npm 已安装 - 符合要求 ✓
 
-REM 环境变量配置
-if not exist .env (
-  if exist .env.example (
-    echo 未找到 .env 文件，正在从 .env.example 创建...
-    copy .env.example .env
-    echo .env 文件已创建，请检查并更新其中的 API 密钥 ⚠
-  ) else (
-    echo 错误: 未找到 .env.example 文件，无法创建 .env
-    exit /b 1
-  )
-) else (
-  echo 发现 .env 文件 ✓
-)
-
 REM 清理缓存
 echo 正在清理缓存...
 if exist .next rmdir /s /q .next

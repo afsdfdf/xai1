@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import { aveSearchTokens } from '@/app/lib/ave-api-service';
 import { cacheService, CACHE_TTL } from '@/app/lib/cache-service';
 
-// Get API key from environment variable or use the fallback
-const AVE_API_KEY = process.env.AVE_API_KEY || "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
+// 硬编码API密钥，不再使用环境变量  
+const AVE_API_KEY = "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
 
 /**
  * GET 处理程序
@@ -27,22 +27,8 @@ export async function GET(request: Request) {
   console.log(`Searching tokens with keyword: ${keyword}, chain: ${chain || 'all'}`);
   
   try {
-    // Check if we have AVE API key
-    if (!AVE_API_KEY) {
-      console.error("Missing AVE_API_KEY, cannot search tokens");
-      return NextResponse.json({
-        success: false,
-        error: "Service configuration error",
-        message: "API key missing",
-        tokens: [],
-        count: 0
-      }, { status: 500 });
-    }
-    
-    // 构建缓存键 - 包含关键词和可选的链参数
-    const cacheKey = `search_tokens_${keyword.toLowerCase()}_${chain || 'all'}`;
-    
     // 检查缓存是否有效
+    const cacheKey = `search_tokens_${keyword.toLowerCase()}_${chain || 'all'}`;
     const cachedResult = cacheService.get(cacheKey);
     if (cachedResult) {
       console.log("Returning cached search results");

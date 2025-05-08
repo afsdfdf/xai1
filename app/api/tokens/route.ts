@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import { getTokenRankList, getTokenRankTopics } from '@/app/lib/ave-api-service';
 import { cacheService, CACHE_TTL } from '@/app/lib/cache-service';
 
-// API key for Ave.ai - 应该从环境变量获取，避免在代码中硬编码
-const AVE_API_KEY = process.env.AVE_API_KEY || "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
+// 硬编码API密钥，不再使用环境变量
+const AVE_API_KEY = "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
 
 // 缓存文件路径
 const CACHE_DIR = process.cwd();

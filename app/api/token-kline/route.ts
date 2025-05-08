@@ -3,7 +3,7 @@ import { aveGetTokenKlineData, formatTokenId } from '@/app/lib/ave-api-service';
 import { cacheService, CACHE_TTL } from '@/app/lib/cache-service';
 import { KLinePoint } from '@/app/lib/types/ave-api';
 
-// Ave.ai API Key
+// 硬编码API密钥，确保无需环境变量
 const AVE_API_KEY = "NMUuJmYHJB6d91bIpgLqpuLLKYVws82lj0PeDP3UEb19FoyWFJUVGLsgE95XTEmA";
 
 // 生成模拟K线数据的函数 - 更加真实和稳定

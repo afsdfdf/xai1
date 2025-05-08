@@ -31,9 +31,6 @@
 
 3. 手动部署:
    ```bash
-   # 创建环境变量文件
-   copy .env.example .env
-   
    # 安装依赖
    npm install --legacy-peer-deps
    
@@ -60,9 +57,6 @@
 
 3. 手动部署:
    ```bash
-   # 创建环境变量文件
-   cp .env.example .env
-   
    # 安装依赖
    npm install --legacy-peer-deps
    
@@ -125,21 +119,22 @@ server {
    - 点击 "Import"
 
 3. 配置项目:
-   - 配置环境变量(参考 `.env.example`)
    - 部署设置保留默认值
    - 点击 "Deploy"
 
 ## 环境变量配置
 
-必需的环境变量:
+本应用已经将所有必要的API密钥硬编码到应用中，不再需要配置环境变量。这样可以简化部署流程，避免环境变量配置错误导致的问题。
 
-| 变量名 | 描述 | 默认值 |
-|--------|------|--------|
-| NEXT_PUBLIC_AVE_API_KEY | Ave.ai API密钥 | (必填) |
-| NEXT_PUBLIC_AVE_API_URL | Ave.ai API基础URL | https://api.ave.ai/v1 |
-| NEXT_PUBLIC_CACHE_DURATION | 缓存持续时间(秒) | 3600 |
-| NEXT_PUBLIC_ENABLE_CHARTS | 是否启用图表 | true |
-| NEXT_PUBLIC_ENABLE_SEARCH | 是否启用搜索 | true |
+以下环境变量已经内置，无需再设置:
+
+| 变量名 | 描述 | 状态 |
+|--------|------|------|
+| AVE_API_KEY | Ave.ai API密钥 | 已硬编码 |
+| NEXT_PUBLIC_AVE_API_URL | Ave.ai API基础URL | 已硬编码 |
+| NEXT_PUBLIC_CACHE_DURATION | 缓存持续时间(秒) | 已硬编码 |
+| NEXT_PUBLIC_ENABLE_CHARTS | 是否启用图表 | 已硬编码 |
+| NEXT_PUBLIC_ENABLE_SEARCH | 是否启用搜索 | 已硬编码 |
 
 ## 常见问题
 
@@ -182,9 +177,9 @@ npm install --legacy-peer-deps
 错误: `Failed to fetch data from API`
 
 解决: 检查以下几点:
-- 确认环境变量中的API密钥配置正确
 - 验证网络连接是否正常
-- 检查API服务是否可用
+- 检查API服务(Ave.ai)是否可用
+- 确保没有防火墙或网络限制阻止对api.ave.ai的访问
 
 ### 5. 样式加载问题
 
