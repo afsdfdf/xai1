@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "token": "0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8",
+      "chain": "arbitrum",
+      "symbol": "PENDLE",
+      "name": "PENDLE",
+      "logo_url": "https://www.iconaves.com/token_icon/arbitrum/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8.png",
+      "current_price_usd": 3.195878458109662,
+      "price_change_24h": 2.84,
+      "tx_volume_u_24h": 915167.6835345452,
+      "holders": 57572,
+      "market_cap": "95947845.18930232441365142990747137922190",
+      "fdv": "95947845.18930232441365142990747137922190",
+      "risk_score": "55"
+    },
+    {
+      "token": "0x2bcc6d6cdbbdc0a4071e48bb3b969b06b3330c07",
+      "chain": "arbitrum",
+      "symbol": "SOL",
+      "name": "Wrapped SOL",
+      "logo_url": "https://www.iconaves.com/token_icon/arbitrum/0x2bcc6d6cdbbdc0a4071e48bb3b969b06b3330c07.png",
+      "current_price_usd": 146.65348306158782,
+      "price_change_24h": 2.09,
+      "tx_volume_u_24h": 552648.08272996,
+      "holders": 9539,
+      "market_cap": "10548358.9167355449450602526854",
+      "fdv": "10548358.9167355449450602526854",
+      "risk_score": "40"
+    },
+    {
+      "token": "0x404853ac2976cbe92bd0d3d73d2e9c703d09f623",
+      "chain": "arbitrum",
+      "symbol": "BUFF",
+      "name": "BUFF",
+      "logo_url": "https://www.iconaves.com/token_icon_request/67e4f612a6713fb646d683de_1743058450.png",
+      "current_price_usd": 0.00116289281561132,
+      "price_change_24h": -0.65,
+      "tx_volume_u_24h": 286845.600431,
+      "holders": 77256,
+      "market_cap": "15117606.60294716000000000",
+      "fdv": "15117606.60294716000000000",
+      "risk_score": "20"
+    },
+    {
+      "token": "0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33",
+      "chain": "arbitrum",
+      "symbol": "GHO",
+      "name": "GHO",
+      "logo_url": "https://www.iconaves.com/token_icon/arbitrum/0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33.png",
+      "current_price_usd": 0.9987503512167007,
+      "price_change_24h": 0.02,
+      "tx_volume_u_24h": 74443.45502168902,
+      "holders": 5625,
+      "market_cap": "1710527.520269529435936090017998396545312",
+      "fdv": "1710527.520269529435936090017998396545312",
+      "risk_score": "55"
+    },
+    {
+      "token": "0xd77b108d4f6cefaa0cae9506a934e825becca46e",
+      "chain": "arbitrum",
+      "symbol": "WINR",
+      "name": "WINR",
+      "logo_url": "https://www.iconaves.com/token_icon/arbitrum/0xd77b108d4f6cefaa0cae9506a934e825becca46e.png",
+      "current_price_usd": 0.007884134086205589,
+      "price_change_24h": 0.99,
+      "tx_volume_u_24h": 41632.33390682003,
+      "holders": 13938,
+      "market_cap": "4935697.301391400406271160176397827532492227",
+      "fdv": "4935697.301391400406271160176397827532492227",
+      "risk_score": "55"
+    },
+    {
+      "token": "0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60",
+      "chain": "arbitrum",
+      "symbol": "LDO",
+      "name": "LDO",
+      "logo_url": "https://www.iconaves.com/token_icon/arbitrum/0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60.png",
+      "current_price_usd": 0.7596006549933221,
+      "price_change_24h": 1.17,
+      "tx_volume_u_24h": 35737.305994428156,
+      "holders": 9508,
+      "market_cap": "1089034.9008138707454194836623527012702001",
+      "fdv": "1089034.9008138707454194836623527012702001",
+      "risk_score": "55"
+    },
+    {
+      "token": "0x1b896893dfc86bb67cf57767298b9073d2c1ba2c",
+      "chain": "arbitrum",
+      "symbol": "Cake",
+      "name": "Cake",
+      "logo_url": "https://www.iconaves.com/token_icon/arbitrum/0x1b896893dfc86bb67cf57767298b9073d2c1ba2c.png",
+      "current_price_usd": 1.9990096085861462,
+      "price_change_24h": 1.53,
+      "tx_volume_u_24h": 27348.353233290116,
+      "holders": 28017,
+      "market_cap": "567573.837568867861345459462892",
+      "fdv": "567573.837568867861345459462892",
+      "risk_score": "55"
+    }
+  ],
+  "timestamp": 1746652231862
+}
